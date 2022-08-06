@@ -1,0 +1,43 @@
+name: Alist_Phase2_Team2_Flutter
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  hive_flutter: ^1.1.0
+  get: ^4.6.1
+  sizer: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+  #   - images/a_dot_ham.jpeg
+  fonts:
+    - family: Hanimation
+      fonts:
+        - asset: assets/fonts/Hanimation/Hanimation_Arabic_Regular.otf
+    - family: SFPro
+      fonts:
+        - asset: assets/fonts/SFPro/FontsFree-Net-SFProText-Regular.ttf

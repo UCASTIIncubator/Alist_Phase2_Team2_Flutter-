@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 
 import 'custom_text_widget.dart';
 
@@ -25,13 +26,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       title: CustomTextWidget(
         title: title,
-        size: 16,
+        size: 12.sp,
         fontWeight: FontWeight.w300,
       ),
       leading: IconButton(
         icon: Icon(
           Icons.arrow_back,
-          size: 26,
+          size: 20.sp,
           color: Colors.black,
         ),
         onPressed: () => Get.back(),
@@ -40,7 +41,6 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         action == ActionsButton.search
             ? IconButton(
                 onPressed: () {},
-
                 icon: Image.asset(
                   'assets/images/icon-search.png',
                   width: 20,

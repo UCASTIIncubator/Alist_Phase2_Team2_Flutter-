@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:sizer/sizer.dart';
 import 'auto_size_text_widget.dart';
 
 // ignore: must_be_immutable
@@ -38,7 +38,7 @@ class CustomTextWidget extends StatelessWidget {
           color: color,
           height: height ?? null,
           fontWeight: fontWeight ?? FontWeight.w400,
-          fontSize: size ?? 14,
+          fontSize: size ?? 10.5.sp,
           shadows: [
             if (shadow == true)
               Shadow(

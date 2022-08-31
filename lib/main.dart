@@ -1,4 +1,3 @@
-import 'package:Alist_Phase2_Team2_Flutter/app/views/screen/notifications.dart';
 import 'package:Alist_Phase2_Team2_Flutter/app/views/screen/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -6,8 +5,8 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
 import 'app/bindings/root_binding .dart';
-import 'base/service/local/local_storage.dart';
-import 'base/service/local/app_locale.dart';
+import 'app/service/local/local_storage.dart';
+import 'app/service/local/app_locale.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await HiveController().initHive();
@@ -35,7 +34,8 @@ class MyApp extends StatelessWidget {
           const Locale('en', 'US'),
           const Locale('ar', 'AR'),
         ],
-       home:ProfileScreen(),
+          home:ProfileScreen(),
+        // home:NotificationScreen(),
       ),
     );
   }

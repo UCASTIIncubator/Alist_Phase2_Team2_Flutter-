@@ -1,7 +1,7 @@
 import 'package:Alist_Phase2_Team2_Flutter/app/utilities/const.dart';
 import 'package:flutter/material.dart';
 
-import '../../../base/service/local/local_storage.dart';
+import '../../../app/service/local/local_storage.dart';
 
 class CustomLineWidget extends StatelessWidget {
   const CustomLineWidget({Key? key}) : super(key: key);

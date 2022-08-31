@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../utilities/const.dart';
-
+import 'package:sizer/sizer.dart';
 // ignore: must_be_immutable
 class CustomTextField extends StatefulWidget {
   TextEditingController? textEditingController;
@@ -70,7 +70,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                       size: 20,
                     ),
                   ),
-            hintStyle: new TextStyle(fontSize: 14),
+            hintStyle:   TextStyle(fontSize: 10.5.sp),
             hoverColor: kMainColor,
             focusColor: kMainColor,
             focusedBorder: InputBorder.none,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:sizer/sizer.dart';
 import '../../utilities/const.dart';
 import 'custom_text_widget.dart';
 
@@ -42,7 +42,7 @@ class CustomButtonWidget extends StatelessWidget {
               :  CustomTextWidget(
             title: title,
             color: colorText,
-            size: fontSize??10,
+            size: fontSize??12.0.sp,
           ),
         ),
       ),

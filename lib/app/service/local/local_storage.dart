@@ -24,7 +24,7 @@ class HiveController {
   }
 
   String get languageCode =>
-      settingsBox.get('language_code', defaultValue: 'ar');
+      settingsBox.get('language_code', defaultValue: 'en');
 
   bool get keepSignIn => settingsBox.get('keep_sign_in', defaultValue: false);
 

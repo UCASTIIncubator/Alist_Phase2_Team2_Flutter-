@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Alist_Phase2_Team2_Flutter/base/service/local/local_storage.dart';
+import 'package:Alist_Phase2_Team2_Flutter/app/service/local/local_storage.dart';
 
 import '../../../app/service/lang/en.dart';
 import '../../../app/service/lang/ar.dart';

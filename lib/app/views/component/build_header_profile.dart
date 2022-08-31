@@ -15,17 +15,17 @@ class BuildHeaderProfile extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          height: 318,
+          height: 40.5.h,
           child:
           Image.asset('assets/images/user.png', fit: BoxFit.fill),
         ),
         Container(
           width: double.infinity,
-          height: 318,
+          height: 40.5.h,
           color: Colors.black.withOpacity(.63),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 30, left: 15, right: 15),
+          padding: const EdgeInsets.only(top: 35, left: 15, right: 15),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -35,7 +35,7 @@ class BuildHeaderProfile extends StatelessWidget {
                   Container(),
                   CustomTextWidget(
                       title: 'Profile'.tr,
-                      size: 16,
+                      size: 12.5.sp,
                       color: Colors.white),
                   GestureDetector(
                     onTap: () => Get.to(()=>EditProfileScreen(),binding: RootBinding()),
@@ -53,14 +53,14 @@ class BuildHeaderProfile extends StatelessWidget {
                   backgroundImage: AssetImage('assets/images/user.png'),
                 ),
               ),
-              SizedBox(height: 1.h),
+              SizedBox(height: 1.5.h),
               CustomTextWidget(
                   title: 'جون ماكدونالد',
-                  size: 18,
+                  size: 14.5.sp,
                   color: Colors.white),
               CustomTextWidget(
                   title: 'غزة ، شارع  الرمال',
-                  size: 14,
+                  size: 10.5.sp,
                   color: Colors.white),
             ],
           ),

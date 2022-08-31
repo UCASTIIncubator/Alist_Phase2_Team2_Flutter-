@@ -41,12 +41,23 @@ class NotificationWidget extends GetView<NotificationsController> {
                     ),
                     SizedBox(width: 8),
                     Expanded(
-                      child:   CustomTextWidget(
-                        title:  Helper.getDescription("Lorem ipsum".tr),
-                        size: 14,
-                        color: textColor,
+                      child:   Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          CustomTextWidget(
+                            title:  Helper.getDescription("Lorem ipsum".tr),
+                            size: 14,
+                            color: textColor,
+                          ),
+                          CustomTextWidget(
+                            title:   "Just now".tr,
+                            size: 10,
+                            color: textColor,
+                          )
+                        ],
                       ),
                     ),
+
                     Icon(
                       Icons.more_vert,
                       color: textColor,

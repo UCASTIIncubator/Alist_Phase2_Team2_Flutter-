@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../base/controllers/profile.dart';
 
-class ProfileController extends BaseProfileController {
+class ProfileController extends GetxController {
   GlobalKey<FormState> editProfileFormKey = GlobalKey<FormState>();
   late TextEditingController nameController;
   late TextEditingController locationController;
@@ -29,7 +28,6 @@ class ProfileController extends BaseProfileController {
     super.onClose();
   }
 
-  @override
   Future<bool> profile() {
     // TODO: implement editProfile
     throw UnimplementedError();

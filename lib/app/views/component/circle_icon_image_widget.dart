@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../utilities/const.dart';
 
 // ignore: must_be_immutable

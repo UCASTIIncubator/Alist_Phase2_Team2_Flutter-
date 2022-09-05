@@ -7,23 +7,25 @@ import 'package:sizer/sizer.dart';
 import 'app/bindings/root_binding .dart';
 import 'app/service/local/local_storage.dart';
 import 'app/service/local/app_locale.dart';
-void main() async{
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await HiveController().initHive();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Sizer(
-      builder: (context, orientation, deviceType) =>  GetMaterialApp(
+      builder: (context, orientation, deviceType) => GetMaterialApp(
         title: 'UCAS App',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(fontFamily: HiveController().languageCode == 'en' ? 'SFPro' : 'Hanimation'),
+        theme: ThemeData(
+            fontFamily:
+                HiveController().languageCode == 'en' ? 'SFPro' : 'Hanimation'),
         translations: AppLocale(),
-        initialBinding: RootBinding() ,
+        initialBinding: RootBinding(),
         locale: Locale(HiveController().languageCode),
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
           const Locale('en', 'US'),
           const Locale('ar', 'AR'),
         ],
-          home:ProfileScreen(),
+        home: ProfileScreen(),
         // home:NotificationScreen(),
       ),
     );
